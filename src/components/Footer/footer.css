@@ -18,3 +18,19 @@ footer .copyright {
   padding-top: 10px;
   padding-bottom: 40px;
 }
+
+@media (width < 1024px) {
+  .footer {
+    padding: 20px 40px;
+    padding-left: 80px;
+    font-size: 15px;
+  }
+}
+
+@media (width < 640px) {
+  .footer {
+    padding: 20px 30px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}

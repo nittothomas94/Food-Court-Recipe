@@ -32,17 +32,17 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+  cursor: pointer;
 }
 
-.allcata-card .card:hover{
+.allcata-card .card:hover {
   transform: scale(1.02);
 }
 
-.card-head{
+.card-head {
   color: wheat;
   padding: 40px;
   text-align: center;
-  
 }
 
 .allcata-card .card img {
@@ -63,12 +63,25 @@
   height: calc(1.5em * 3);
 }
 
+@media (width < 1024px) {
+  .allcata {
+    padding: 25px;
+    padding-top: 100px;
+  }
+
+  .allcata .allcata-card {
+    width: 100%;
+    box-shadow: 0px 0px 50px 6px rgb(195, 4, 4);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+}
 
 @media (width < 640px) {
-  .allcata {
-    padding: 20px;
-  }
-  
   .home-img {
     margin-left: 10px;
     margin-bottom: 10x;
@@ -78,18 +91,7 @@
     box-shadow: 0px 0px 15px 5px rgb(234, 7, 7);
     border-radius: 10px;
   }
-  
-  .allcata .allcata-card {
-    width: 100%;
-    box-shadow: 0px 0px 50px 6px red;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-  }
-  
+
   .allcata-card .card {
     background-color: white;
     box-shadow: 0px 0px 6px 4px white;
@@ -101,26 +103,21 @@
     justify-content: center;
     padding: 5px;
   }
-  
-  
-  
-  .card-head{
+
+  .card-head {
     color: wheat;
     padding: 10px;
     text-align: center;
-    
   }
-  
+
   .allcata-card .card img {
     width: 100px;
     height: 100px;
     object-fit: contain;
     background-color: white;
   }
-  
+
   .card .description {
     display: none;
   }
-  
-
 }
