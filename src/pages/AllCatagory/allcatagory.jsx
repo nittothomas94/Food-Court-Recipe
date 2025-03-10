@@ -28,7 +28,6 @@ const AllCatagory = () => {
 
   return (
     <div className="allcata">
-      <img className="home-img" src="public/burger3.jpg" alt="home iamge" />
       <h1 className="card-head">All Catagories Meals</h1>
       <div className="allcata-card">
         {cata.map(item => {
